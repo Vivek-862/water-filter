@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes bounce-pulse {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-10px) scale(1.1); }
+  }
+  .animate-bounce-pulse {
+    animation: bounce-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes wave-text {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-4px) rotate(1deg); }
+  }
+  .animate-wave-text {
+    animation: wave-text 4s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.9; }
+  }
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  @keyframes wave {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  .animate-wave {
+    animation: wave 8s linear infinite;
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fade-in 1.5s ease-out forwards;
+  }
+
+  @keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  .animate-slideDown {
+    animation: slideDown 1s ease-out forwards;
+  }
+
+  @keyframes bgPulse {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .animate-bgPulse {
+    background-size: 200% 200%;
+    animation: bgPulse 8s ease infinite;
+  }
+
+  @keyframes glowText {
+    0%, 100% { text-shadow: 0 0 10px rgba(255,255,255,0.5); }
+    50% { text-shadow: 0 0 30px rgba(255,255,255,1), 0 0 50px rgba(59,130,246,0.8); }
+  }
+  .animate-glowText {
+    animation: glowText 2s ease-in-out infinite;
+  }
+
+  @keyframes bounceRocket {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  .animate-bounceRocket {
+    animation: bounceRocket 1.5s ease-in-out infinite;
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+  }
+  .animate-shake {
+    animation: shake 1.5s ease-in-out infinite;
+  }
+
+  @keyframes spinSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .animate-spinSlow {
+    animation: spinSlow 4s linear infinite;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 1.5s ease-out forwards;
+  }
+
+  /* Confetti falling animations */
+  @keyframes confetti1 {
+    0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }
+    100% { transform: translateY(300px) rotate(720deg); opacity: 1; }
+  }
+  .animate-confetti1 { animation: confetti1 4s linear infinite; }
+
+  @keyframes confetti2 {
+    0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }
+    100% { transform: translateY(300px) rotate(-720deg); opacity: 1; }
+  }
+  .animate-confetti2 { animation: confetti2 5s linear infinite 0.5s; }
+
+  @keyframes confetti3 {
+    0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }
+    100% { transform: translateY(300px) rotate(540deg); opacity: 1; }
+  }
+  .animate-confetti3 { animation: confetti3 4.5s linear infinite 1s; }
+
+  @keyframes confetti4 {
+    0% { transform: translateY(-100px) scale(0); opacity: 0; }
+    100% { transform: translateY(300px) scale(1.5); opacity: 1; }
+  }
+  .animate-confetti4 { animation: confetti4 6s linear infinite 1.5s; }
+
+  @keyframes confetti5 {
+    0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }
+    100% { transform: translateY(300px) rotate(360deg); opacity: 1; }
+  }
+  .animate-confetti5 { animation: confetti5 3.5s linear infinite 2s; }
+
+  @keyframes confetti6 {
+    0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }
+    100% { transform: translateY(300px) rotate(-540deg); opacity: 1; }
+  }
+  .animate-confetti6 { animation: confetti6 5.5s linear infinite 0.8s; }
+}
