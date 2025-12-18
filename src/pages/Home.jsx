@@ -36,6 +36,7 @@
 // export default Home
 
 import React, { useState } from 'react';
+import { Link } from "@tanstack/react-router";
 
 const Home = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -83,12 +84,12 @@ const Home = () => {
             >
               Call Now for Service / Buy
             </button>
-            <a
-              href="/products"
-              className="bg-transparent border-4 border-white hover:bg-white hover:text-blue-700 px-10 py-5 rounded-full text-2xl font-bold transition"
-            >
-              Explore Products
-            </a>
+            <Link
+  to="/products"
+  className="bg-transparent border-4 border-white hover:bg-white hover:text-blue-700 px-10 py-5 rounded-full text-2xl font-bold transition"
+>
+  Explore Products
+</Link>
           </div>
         </div>
       </section>
