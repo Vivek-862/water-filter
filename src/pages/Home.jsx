@@ -93,6 +93,44 @@ const Home = () => {
         </div>
       </section>
 
+   <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100 p-6 sm:p-10 shadow-xl">
+
+  {/* Water glow effects */}
+  <div className="absolute -top-20 -right-20 h-48 w-48 rounded-full bg-blue-300/30 blur-3xl" />
+  <div className="absolute -bottom-20 -left-20 h-48 w-48 rounded-full bg-cyan-300/30 blur-3xl" />
+
+  <h2 className="relative text-2xl sm:text-3xl font-bold text-blue-900 mb-6">
+    💧 Water Filter Service in Mumbai
+  </h2>
+
+  <p className="relative text-blue-800 mb-5 text-base sm:text-lg">
+    We provide professional water purifier service in Mumbai including:
+  </p>
+
+  <ul className="relative space-y-4 text-blue-900 text-base sm:text-lg font-medium">
+    <li className="flex items-center gap-3">
+      <span className="text-xl">🌊</span>
+      Kent water filter service
+    </li>
+
+    <li className="flex items-center gap-3">
+      <span className="text-xl">💧</span>
+      Aquaguard water purifier repair
+    </li>
+
+    <li className="flex items-center gap-3">
+      <span className="text-xl">🚰</span>
+      Water filter installation & maintenance
+    </li>
+
+    <li className="flex items-center gap-3">
+      <span className="text-xl">🛠️</span>
+      All brand RO service at doorstep
+    </li>
+  </ul>
+</section>
+
+
       {/* Visual Sections with Images */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto text-center">
@@ -123,28 +161,58 @@ const Home = () => {
       </section>
 
       {/* Call Now Popup Modal */}
-      {showPopup && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4" onClick={() => setShowPopup(false)}>
-          <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full p-10 text-center relative" onClick={(e) => e.stopPropagation()}>
-            <button
-              onClick={() => setShowPopup(false)}
-              className="absolute top-4 right-6 text-4xl text-gray-500 hover:text-gray-800"
-            >
-              ×
-            </button>
-            <h3 className="text-3xl font-bold text-blue-800 mb-6">Get Instant Help!</h3>
-            <p className="text-xl text-gray-700 mb-8">Call us now for new purchase, service, or demo</p>
-            <a
-              href="tel:+919876543210"
-              className="inline-flex items-center gap-4 bg-blue-600 hover:bg-blue-700 text-white px-10 py-6 rounded-full text-2xl font-bold shadow-xl transform hover:scale-105 transition"
-            >
-              <span className="text-4xl">📞</span>
-              +91 98765 43210
-            </a>
-            <p className="mt-6 text-gray-600">Available 24/7 for emergencies</p>
-          </div>
-        </div>
-      )}
+{showPopup && (
+  <div
+    className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4"
+    onClick={() => setShowPopup(false)}
+  >
+    <div
+      className="relative bg-white rounded-2xl sm:rounded-3xl shadow-2xl 
+                 w-full max-w-sm sm:max-w-md 
+                 p-6 sm:p-10 text-center"
+      onClick={(e) => e.stopPropagation()}
+    >
+      {/* Close Button */}
+      <button
+        onClick={() => setShowPopup(false)}
+        className="absolute top-3 right-4 sm:top-4 sm:right-6 
+                   text-3xl sm:text-4xl text-gray-500 hover:text-gray-800"
+      >
+        ×
+      </button>
+
+      {/* Title */}
+      <h3 className="text-2xl sm:text-3xl font-bold text-blue-800 mb-4 sm:mb-6">
+        Get Instant Help!
+      </h3>
+
+      {/* Subtitle */}
+      <p className="text-base sm:text-xl text-gray-700 mb-6 sm:mb-8">
+        Call us now for new purchase, service, or demo
+      </p>
+
+      {/* Call Button */}
+      <a
+        href="tel:+919004041885"
+        className="inline-flex items-center justify-center gap-3 sm:gap-4 
+                   bg-blue-600 hover:bg-blue-700 text-white 
+                   w-full sm:w-auto 
+                   px-6 sm:px-10 py-4 sm:py-6 
+                   rounded-full text-lg sm:text-2xl font-bold 
+                   shadow-xl transform hover:scale-105 transition"
+      >
+        <span className="text-2xl sm:text-4xl">📞</span>
+        +91 9004041885
+      </a>
+
+      {/* Footer Text */}
+      <p className="mt-4 sm:mt-6 text-sm sm:text-base text-gray-600">
+        Available 24/7 for emergencies
+      </p>
+    </div>
+  </div>
+)}
+
     </div>
   );
 };

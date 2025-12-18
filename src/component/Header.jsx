@@ -65,7 +65,7 @@ export default function Header() {
           <Link to="/home" className={navLink}>Home</Link>
           <Link to="/about" className={navLink}>About</Link>
           <Link to="/products" className={navLink}>Product</Link>
-        <Link to="/login" className={navLink} onClick={() => setOpen(false)}>Book Appointment</Link>
+          <Link to="/login" className={navLink} onClick={() => setOpen(false)}>Book Appointment</Link>
 
           {/* {isLoggedIn ? (
             <button
@@ -93,7 +93,7 @@ export default function Header() {
         <div className="md:hidden bg-white shadow-lg animate-slideDown">
           <Link to="/home" className={navLink} onClick={() => setOpen(false)}>Home</Link>
           <Link to="/about" className={navLink} onClick={() => setOpen(false)}>About</Link>
-          <Link to="/product" className={navLink} onClick={() => setOpen(false)}>Product</Link>
+          <Link to="/products" className={navLink} onClick={() => setOpen(false)}>Product</Link>
           <Link to="/login" className={navLink} onClick={() => setOpen(false)}>Book Appointment</Link>
 
           {/* {isLoggedIn ? (

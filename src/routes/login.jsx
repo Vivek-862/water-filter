@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useAuth } from "../context/AuthContext";
 
 export const Route = createFileRoute("/login")({
@@ -7,7 +7,9 @@ export const Route = createFileRoute("/login")({
 
 function Login() {
   const { login } = useAuth();
-  const navigate = useNavigate();
+//   const navigate = useNavigate();
+const navigate = Route.useNavigate();
+
 
   return (
     <div className="p-6">

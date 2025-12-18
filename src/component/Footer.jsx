@@ -38,7 +38,7 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <Phone size={20} className="text-blue-400" />
                 <a href="tel:+919876543210" className="hover:text-blue-400 transition">
-                  +91 98765 43210
+                  +91 9004041885
                 </a>
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function Footer() {
               <p className="text-gray-400 mt-2">Call us for instant quote or service booking</p>
             </div>
             <a
-              href="tel:+919876543210"
+              href="tel:+919004041885"
               className="flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition transform hover:scale-105"
             >
               <Phone size={24} />

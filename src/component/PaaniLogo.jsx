@@ -17,7 +17,8 @@ export default function PaaniLogo() {
           <span>
             {" "}
             <p className="text-sm text-blue-700 font-medium tracking-wider animate-fade-in">
-              Pure. Fresh. Life.
+              {/* Pure. Fresh. Life. */}
+              Water Filter Machines Sales & Service
             </p>
           </span>
           {/* <span className="absolute inset-0 text-blue-400 blur-md animate-glow opacity-70">PAANI</span> */}
